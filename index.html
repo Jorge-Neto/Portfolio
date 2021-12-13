@@ -1,12 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Jorge</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="webview">
+      <section class="intro">
+        <div class="container">
+          <h1>Jorge de Oliveira Neto</h1>
+          <p>Estagiário Front end</p>
+          <div class="m-auto-btn">
+            <button class="btn-portfolio">Portfolio</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre">
+        <div class="container">
+          <div class="title">
+            <h2>Sobre</h2>
+          </div>
+          <div class="row">
+            <div class="c-photo">
+              <img src="" alt="" />
+            </div>
+            <div class="c-description">
+              <p>Descrição</p>
+              <div class="skills">
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>HTML e CSS</h3>
+                  </div>
+                  <div class="h-c-percentage">
+                    <div class="h-max-percentage">
+                      <div class="h-percentage"></div>
+                      <span>90%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>JavaScript</h3>
+                  </div>
+                  <div class="h-c-percentage">
+                    <div class="h-max-percentage">
+                      <div class="h-percentage"></div>
+                      <span>80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>GitHub</h3>
+                  </div>
+                  <div class="h-c-percentage">
+                    <div class="h-max-percentage">
+                      <div class="h-percentage"></div>
+                      <span>70%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="s-title">
+            <h2>Serviços</h2>
+          </div>
+          <div class="s-carousel">
+            <div class="s-carousel-container">
+              <div class="owl-carousel owl-theme">
+                <div class="item s-carousel-item">
+                  <div class="title">
+                    <p>01</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span></span>
+                    </div>
+                    <div class="text">
+                      <p>UI e UX</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item s-carousel-item">
+                  <div class="title">
+                    <p>02</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span></span>
+                    </div>
+                    <div class="text">
+                      <p>Programação</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item s-carousel-item">
+                  <div class="title">
+                    <p>03</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span></span>
+                    </div>
+                    <div class="text">
+                      <p>Conserto</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item s-carousel-item">
+                  <div class="title">
+                    <p>04</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span></span>
+                    </div>
+                    <div class="text">
+                      <p>Otimização</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <div class="p-title">
+            <h2>Portfólio</h2>
+          </div>
+          <div class="p-projects">
+            <div class="project">
+              <div class="photos">
+                <div class="img">
+                  <img src="" alt="" />
+                  <div class="description">
+                    <p>Projeto 01</p>
+                  </div>
+                </div>
+              </div>
+              <div class="photos">
+                <div class="img">
+                  <img src="" alt="" />
+                  <div class="description">
+                    <p>Projeto 02</p>
+                  </div>
+                </div>
+              </div>
+              <div class="photos">
+                <div class="img">
+                  <img src="" alt="" />
+                  <div class="description">
+                    <p>Projeto 03</p>
+                  </div>
+                </div>
+              </div>
+              <div class="photos">
+                <div class="img">
+                  <img src="" alt="" />
+                  <div class="description">
+                    <p>Projeto 04</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="title">
+            <h2>Contato</h2>
+          </div>
+          <div class="form">
+            <form>
+              <div class="form-group">
+                <div class="controls">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="controls">
+                  <label for="surname">Sobrenome:</label>
+                  <input type="text" name="surname" id="surname" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="controls">
+                  <label for="whatsapp">Whatsapp:</label>
+                  <input type="number" name="whatsapp" id="whatsapp" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <label for="message">Mensagem:</label>
+                  <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+              </div>
+              <div class="form-group n-auto">
+                <button type="submit" class="btn-for-send">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+          <span>&copy; Todos os direitos reservados.</span>
+      </footer>
+    </div>
+  </body>
 </html>

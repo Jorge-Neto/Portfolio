@@ -1,0 +1,26 @@
+// Variáveis de cores
+$color-white: #ecf0f1;
+$color-grenn: #27ae60;
+$color-red: #e74c3c;
+$color-black: #1e272e;
+
+// Variáveis de Media Queries
+$media-mobile-s: 320px;
+$media-mobile-m: 375px;
+$media-mobile-l: 425px;
+$media-tablet: 768px;
+$media-desktop: 1024px;
+
+// Mixins de fontes
+@mixin font-title {
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+}
+@mixin font-sutitle {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+}
+@mixin font-paragraph {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+}
