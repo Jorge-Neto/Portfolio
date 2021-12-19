@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -50,69 +51,339 @@ html, body {
   background-color: transparent;
   color: #ecf0f1;
 }
-.webview .sobre {
+.webview .about {
   width: 100%;
 }
-.webview .sobre .container {
+.webview .about .container {
   padding: 10px;
 }
-.webview .sobre .container .title {
+.webview .about .container .title {
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
-.webview .sobre .container .title h2 {
+.webview .about .container .title h2 {
   font-family: "Ruda", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   font-weight: bold;
   color: #27ae60;
 }
-.webview .sobre .container .row {
+.webview .about .container .row {
   width: 100%;
   margin: 30px 0 30px;
 }
-.webview .sobre .container .row .c-photo {
+.webview .about .container .row .c-photo {
   width: 100%;
   margin: auto auto 30px;
 }
-.webview .sobre .container .row .c-photo img {
+.webview .about .container .row .c-photo img {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-.webview .sobre .container .row .c-description {
+.webview .about .container .row .c-description {
   width: 100%;
 }
-.webview .sobre .container .row .c-description p {
+.webview .about .container .row .c-description p {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   text-align: justify;
   margin-bottom: 20px;
 }
-.webview .sobre .container .row .c-description .skills {
+.webview .about .container .row .c-description .skills {
   width: 100%;
 }
-.webview .sobre .container .row .c-description .skills .h-item {
+.webview .about .container .row .c-description .skills .h-item {
   width: 100%;
   margin-bottom: 10px;
 }
-.webview .sobre .container .row .c-description .skills .h-item .h-title {
+.webview .about .container .row .c-description .skills .h-item .h-title {
   width: 100%;
 }
-.webview .sobre .container .row .c-description .skills .h-item .h-title h3 {
+.webview .about .container .row .c-description .skills .h-item .h-title h3 {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   font-weight: bold;
 }
-.webview .sobre .container .row .c-description .skills .h-item .h-c.percentage {
+.webview .about .container .row .c-description .skills .h-item .h-c-percentage {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   min-height: 25px;
+}
+.webview .about .container .row .c-description .skills .h-item .h-c-percentage .h-max-percentage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+}
+.webview .about .container .row .c-description .skills .h-item .h-c-percentage .h-max-percentage .h-percentage {
+  height: 100%;
+}
+.webview .about .container .row .c-description .skills .h-item .h-c-percentage .h-max-percentage span {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.webview .services {
+  width: 100%;
+  background-color: #27ae60;
+  color: #ecf0f1;
+}
+.webview .services .container {
+  padding: 10px;
+}
+.webview .services .container .s-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.webview .services .container .s-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.webview .services .container .s-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.webview .services .container .s-carousel .s-carousel-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item {
+  min-height: 260px;
+  background-color: #ecf0f1;
+  color: #27ae60;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .title {
+  width: 100%;
+  padding: 10px;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .title p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 180px;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .body .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .body .icon span {
+  font-size: 38px;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .body .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 10px;
+}
+.webview .services .container .s-carousel .s-carousel-container .s-carousel-item .body .text p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.webview .portfolio {
+  width: 100%;
+  min-height: 100vh;
+}
+.webview .portfolio .container {
+  padding: 10px;
+}
+.webview .portfolio .container .p-title {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+.webview .portfolio .container .p-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+.webview .portfolio .container .p-projects {
+  width: 100%;
+}
+.webview .portfolio .container .p-projects .project {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+}
+.webview .portfolio .container .p-projects .project .photos {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.webview .portfolio .container .p-projects .project .photos .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.webview .portfolio .container .p-projects .project .photos .img:hover .description {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #26de81;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.webview .portfolio .container .p-projects .project .photos .img:hover .description p {
+  display: block;
+  color: #ecf0f1;
+}
+.webview .portfolio .container .p-projects .project .photos .img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.webview .portfolio .container .p-projects .project .photos .description {
+  display: none;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+.webview .portfolio .container .p-projects .project .photos .description p {
+  display: none;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: #ecf0f1;
+}
+.webview .contact {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.webview .contact .container {
+  padding: 10px;
+}
+.webview .contact .container .title {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+.webview .contact .container .title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+.webview .contact .container .form {
+  width: 100%;
+}
+.webview .contact .container .form form {
+  width: 100%;
+}
+.webview .contact .container .form form .form-group {
+  width: 100%;
+}
+.webview .contact .container .form form .form-group .controls {
+  width: 100%;
+  min-height: 70px;
+}
+.webview .contact .container .form form .form-group .controls label {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  color: #27ae60;
+}
+.webview .contact .container .form form .form-group .controls input {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #27ae60;
+}
+.webview .contact .container .form form .form-group .controls input:active {
+  border: 1px solid #27ae60;
+  border-radius: 2px;
+}
+.webview .contact .container .form form .form-group .controls input:focus {
+  border: 1px solid #27ae60;
+  border-radius: 2px;
+}
+.webview .contact .container .form form .form-group .controls textarea {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #27ae60;
+  outline: none;
+}
+.webview .contact .container .form form .form-group .controls textarea:active {
+  border: 1px solid #27ae60;
+  border-radius: 2px;
+}
+.webview .contact .container .form form .form-group .controls textarea:focus {
+  border: 1px solid #27ae60;
+  border-radius: 2px;
+}
+.webview .contact .container .form form .form-group .btn-form-send {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #27ae60;
+  color: #ecf0f1;
+  border-radius: 2px;
+}
+.webview .contact .container .form form .form-group .btn-form-send:hover, .webview .contact .container .form form .form-group .btn-form-send:active {
+  background-color: #27ae60;
+}
+.webview .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #27ae60;
+}
+.webview .footer span {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: #ecf0f1;
 }
 
 /*# sourceMappingURL=style.css.map */

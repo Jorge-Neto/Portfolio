@@ -26,7 +26,6 @@ body {
     height: 100vh;
     background-color: config.$color-green;
     color: config.$color-white;
-
     .container {
       h1 {
         font-size: 2rem;
@@ -42,7 +41,6 @@ body {
         align-items: center;
         width: 100%;
         margin-top: 8px;
-
         .btn-portfolio {
           @include config.font-paragraph;
           width: 160px;
@@ -141,7 +139,7 @@ body {
     color: config.$color-white;
     .container {
       padding: 10px;
-      s-title {
+      .s-title {
         width: 100%;
         text-align: center;
         margin-top: 20px;
@@ -163,40 +161,224 @@ body {
           flex-direction: row;
           min-width: 100%;
           .s-carousel-item {
-              min-height: 260px;
-              background-color: config.$color-white;
-              color: config.$color-green;
-              .title {
-                  width: 100%;
-                  padding: 10px;
-                  p {
-                      @include config.font-paragraph;
-                      font-size: 1.6rem;
-                      font-weight: bold;
-                  }
+            min-height: 260px;
+            background-color: config.$color-white;
+            color: config.$color-green;
+            .title {
+              width: 100%;
+              padding: 10px;
+              p {
+                @include config.font-paragraph;
+                font-size: 1.6rem;
+                font-weight: bold;
               }
-              .body {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  width: 100%;
-                  min-height: 180px;
-                  .icon {
-                      display: flex;
-                      flex-direction: row;
-                      justify-content: center;
-                      align-items: center;
-                      width: 100%;
-                      margin-bottom: 10px;
-                      span {
-                          font-size:38px
-                      }
-                  }
+            }
+            .body {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              min-height: 180px;
+              .icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 10px;
+                span {
+                  font-size: 38px;
+                }
               }
+              .text {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 10px;
+                p {
+                  @include config.font-paragraph;
+                  text-align: center;
+                  font-size: 1.4rem;
+                }
+              }
+            }
           }
         }
       }
+    }
+  }
+
+  .portfolio {
+    width: 100%;
+    min-height: 100vh;
+    .container {
+      padding: 10px;
+      .p-title {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 30px;
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
+        }
+      }
+      .p-projects {
+        width: 100%;
+        .project {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(3, auto);
+          row-gap: 10px;
+          .photos {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            .img {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              &:hover {
+                .description {
+                  position: absolute;
+                  display: flex;
+                  width: 100%;
+                  height: 50px;
+                  background-color: config.$color-lightgreen;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 999;
+                  p {
+                    display: block;
+                    color: config.$color-white;
+                  }
+                }
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+            .description {
+              display: none;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              min-height: 50px;
+              p {
+                display: none;
+                @include config.font-paragraph;
+                color: config.$color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    width: 100%;
+    margin-bottom: 30px;
+    .container {
+      padding: 10px;
+      .title {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 30px;
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
+        }
+      }
+      .form {
+        width: 100%;
+        form {
+          width: 100%;
+          .form-group {
+            width: 100%;
+            .controls {
+              width: 100%;
+              min-height: 70px;
+              label {
+                @include config.font-paragraph;
+                font-weight: bold;
+                color: config.$color-green;
+              }
+              input {
+                @include config.font-paragraph;
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                border: 1px solid config.$color-green;
+                &:active {
+                  border: 1px solid config.$color-green;
+                  border-radius: 2px;
+                }
+                &:focus {
+                  border: 1px solid config.$color-green;
+                  border-radius: 2px;
+                }
+              }
+              textarea {
+                @include config.font-paragraph;
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid config.$color-green;
+                outline: none;
+                &:active {
+                  border: 1px solid config.$color-green;
+                  border-radius: 2px;
+                }
+                &:focus {
+                  border: 1px solid config.$color-green;
+                  border-radius: 2px;
+                }
+              }
+            }
+            .btn-form-send {
+              @include config.font-paragraph;
+              margin-top: 20px;
+              width: 140px;
+              height: 40px;
+              border: none;
+              background-color: config.$color-green;
+              color: config.$color-white;
+              border-radius: 2px;
+              &:hover,
+              &:active {
+                background-color: config.$color-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: config.$color-green;
+    span {
+      @include config.font-paragraph;
+      color: config.$color-white;
     }
   }
 }

@@ -3,6 +3,7 @@ $color-white: #ecf0f1;
 $color-green: #27ae60;
 $color-red: #e74c3c;
 $color-black: #1e272e;
+$color-lightgreen: #26de81;
 
 // Variáveis de Media Queries
 $media-mobile-s: 320px;
@@ -10,7 +11,6 @@ $media-mobile-m: 375px;
 $media-mobile-l: 425px;
 $media-tablet: 768px;
 $media-desktop: 1024px;
-
 // Mixins de fontes
 @mixin font-title {
   font-family: "Ruda", sans-serif;
