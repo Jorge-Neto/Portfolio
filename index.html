@@ -9,9 +9,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Folha de estilos -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.theme.green.min.css">
 
   </head>
   <body>
@@ -33,7 +36,7 @@
           </div>
           <div class="row">
             <div class="c-photo">
-              <img src="" alt="" />
+              <img src="./assets/img/profile/profile.jpeg" alt="Imagem de perfil" />
             </div>
             <div class="c-description">
               <p>*Texto Descrição*</p>
@@ -62,12 +65,23 @@
                 </div>
                 <div class="h-item">
                   <div class="h-title">
-                    <h3>GitHub</h3>
+                    <h3>Angular</h3>
                   </div>
                   <div class="h-c-percentage">
                     <div class="h-max-percentage">
                       <div class="h-percentage"></div>
                       <span>70%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>GitHub</h3>
+                  </div>
+                  <div class="h-c-percentage">
+                    <div class="h-max-percentage">
+                      <div class="h-percentage"></div>
+                      <span>75%</span>
                     </div>
                   </div>
                 </div>
@@ -91,10 +105,14 @@
                   </div>
                   <div class="body">
                     <div class="icon">
-                      <span></span>
+                      <span>
+                        <i class="fab fa-chrome"></i>
+                        <i class="fab fa-internet-explorer"></i>
+                        <i class="fab fa-firefox"></i>
+                      </span>
                     </div>
                     <div class="text">
-                      <p>UI e UX</p>
+                      <p>Construção de Websites</p>
                     </div>
                   </div>
                 </div>
@@ -104,10 +122,10 @@
                   </div>
                   <div class="body">
                     <div class="icon">
-                      <span></span>
+                      <span><i class="fas fa-desktop"></i></span>
                     </div>
                     <div class="text">
-                      <p>Programação</p>
+                      <p>Single Page Applications</p>
                     </div>
                   </div>
                 </div>
@@ -117,10 +135,12 @@
                   </div>
                   <div class="body">
                     <div class="icon">
-                      <span></span>
+                      <span>
+                        <i class="fab fa-angular"></i>
+                      </span>
                     </div>
                     <div class="text">
-                      <p>Conserto</p>
+                      <p>Aplicações utilizando Frameworks</p>
                     </div>
                   </div>
                 </div>
@@ -130,10 +150,24 @@
                   </div>
                   <div class="body">
                     <div class="icon">
-                      <span></span>
+                      <span><i class="fas fa-memory"></i></span>
                     </div>
                     <div class="text">
-                      <p>Otimização</p>
+                      <p>Manutenção de Hardwares</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item s-carousel-item">
+                  <div class="title">
+                    <p>05</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span><i class="fab fa-windows"></i></span>
+                    </div>
+                    <div class="text">
+                      <p>Otimização de Sistemas Operacionais</p>
                     </div>
                   </div>
                 </div>
@@ -211,7 +245,7 @@
                 </div>
                 <div class="controls">
                   <label for="whatsapp">Whatsapp:</label>
-                  <input type="number" name="whatsapp" id="whatsapp" required />
+                  <input type="text" name="whatsapp" id="whatsapp" required />
                 </div>
               </div>
               <div class="form-group">
@@ -239,4 +273,16 @@
       </footer>
     </div>
   </body>
+
+  <!-- JQuery -->
+  <script src="assets/js/jquery/jquery-3.6.0.min.js"></script>
+  <!-- JQuery Mask -->
+  <script src="assets/js/jquery/jquery.mask.min.js"></script>
+  <script src="assets/js/custom/mask-form.js"></script>
+  <!-- OWL Carousel -->
+  <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/js/owl-carousel/owl.start.function.js"></script>
+
+
+
 </html>
