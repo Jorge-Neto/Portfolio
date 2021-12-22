@@ -39,7 +39,7 @@
               <img src="./assets/img/profile/profile.jpeg" alt="Imagem de perfil" />
             </div>
             <div class="c-description">
-              <p>*Texto Descrição*</p>
+              <p>Estagiário em programação Front-end focado em adquirir cada vez mais experiência e que busca ativamente ser um programador melhor e de destaque.</p>
               <div class="skills">
                 <div class="h-item">
                   <div class="h-title">
@@ -186,34 +186,42 @@
             <div class="project">
               <div class="photos">
                 <div class="img">
-                  <img src="" alt="" />
-                  <div class="description">
-                    <p>Projeto 01</p>
-                  </div>
+                  <a href="https://github.com/Jorge-Neto/Calculadora-Basica" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/projects/project1.png" alt="Ilustração da página da calculadora" />
+                    <div class="description">
+                      <p>Calculadora Básica</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="photos">
                 <div class="img">
-                  <img src="" alt="" />
-                  <div class="description">
-                    <p>Projeto 02</p>
-                  </div>
+                  <a href="https://github.com/Jorge-Neto/Calculadora-de-Gorjetas" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/projects/project2.png" alt="Ilustração da página da calculadora de gorjetas" />
+                    <div class="description">
+                      <p>Calculadora de Gorjetas</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="photos">
                 <div class="img">
-                  <img src="" alt="" />
-                  <div class="description">
-                    <p>Projeto 03</p>
-                  </div>
+                  <a href="https://github.com/Jorge-Neto/JO-KEN-PO" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/projects/project3.png" alt="Ilustração da página do Jo-Ken-Po game" />
+                    <div class="description">
+                      <p>Jo-Ken-Po Game</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="photos">
                 <div class="img">
-                  <img src="" alt="" />
-                  <div class="description">
-                    <p>Projeto 04</p>
-                  </div>
+                  <a href="https://github.com/Jorge-Neto/Lista-To-Do" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/projects/project4.png" alt="Ilustração da página da lista de afazeres" />
+                    <div class="description">
+                      <p>Lista de afazeres</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -227,30 +235,30 @@
             <h2>Contato</h2>
           </div>
           <div class="form">
-            <form>
+            <form id="my-form" action="https://formspree.io/f/mgedejba" method="POST">
               <div class="form-group">
                 <div class="controls">
-                  <label for="name">Nome:</label>
+                  <label for="name">Nome: *</label>
                   <input type="text" name="name" id="name" required />
                 </div>
                 <div class="controls">
-                  <label for="surname">Sobrenome:</label>
+                  <label for="surname">Sobrenome: *</label>
                   <input type="text" name="surname" id="surname" required />
                 </div>
               </div>
               <div class="form-group">
                 <div class="controls">
-                  <label for="email">Email:</label>
+                  <label for="email">Email: *</label>
                   <input type="email" name="email" id="email" required />
                 </div>
                 <div class="controls">
-                  <label for="whatsapp">Whatsapp:</label>
-                  <input type="text" name="whatsapp" id="whatsapp" required />
+                  <label for="phone">Telefone:</label>
+                  <input type="text" name="phone" id="phone" />
                 </div>
               </div>
               <div class="form-group">
                 <div class="controls">
-                  <label for="message">Mensagem:</label>
+                  <label for="message">Mensagem: *</label>
                   <textarea
                     name="message"
                     id="message"
@@ -261,12 +269,21 @@
                 </div>
               </div>
               <div class="form-group n-auto">
-                <button type="submit" class="btn-form-send">Enviar</button>
+                <button id="my-form-button" class="btn-form-send">Enviar</button>
+              </div>
+              <div>
+                <p id="my-form-status"></p>
               </div>
             </form>
           </div>
         </div>
       </section>
+
+      <div class="container-whatsapp">
+        <a href="https://bit.ly/3EeFNxH" class="btn-whatsapp" target="blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
 
       <footer class="footer">
         <span>&copy; Todos os direitos reservados.</span>
@@ -282,7 +299,8 @@
   <!-- OWL Carousel -->
   <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/js/owl-carousel/owl.start.function.js"></script>
-
+  <!-- Send form script -->
+  <script src="assets/js/send.js"></script>
 
 
 </html>
